@@ -73,11 +73,11 @@ const FormInput = () => {
             }}
             name="date"
           ></DatePicker>
-          <small>
+          {/* <small>
             {errors.map((error) => (
               <p key={error}>{error}</p>
             ))}
-          </small>
+          </small> */}
         </div>
         <button disabled={errors.length > 0} className="btn btn-dark">
           Add
