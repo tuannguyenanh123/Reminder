@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import FormInput from "./components/FormInput";
+import ListReminders from "./components/ListReminders";
+import NotiRemid from "./components/NotiRemid";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="appMain">
+        <NotiRemid />
+        <h1>NHẮC NHỞ NGÀY QUAN TRỌNG CỦA BẠN</h1>
+        <div className="container">
+          <div className="row">
+            <FormInput />
+            <ListReminders />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
