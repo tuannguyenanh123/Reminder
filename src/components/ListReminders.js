@@ -5,6 +5,7 @@ import remindStore from "../store/Store";
 import { useEffect } from "react";
 
 const ListReminders = () => {
+  localStorage.setItem("reminders", JSON.stringify(remindStore.listRemind));
   useEffect(() => {
     const remind = JSON.parse(localStorage.getItem("reminders"));
     remindStore.listRemind = remind;
